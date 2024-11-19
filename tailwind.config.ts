@@ -9,8 +9,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        grey: {
+          100: "#F9F9F9",
+          200: "#F2F2F2",
+          300: "#C6C6C6",
+          400: "#AAAAAA",
+          500: "#868282"
+        },
+        brandblack: "#1A1A1A",
+        brandblue: "#5769EF"
+      },
+      fontFamily: {
+        fustat: ['var(--font-fustat)', 'sans-serif'],
       },
     },
   },
