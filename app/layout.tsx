@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {Fustat} from "next/font/google"
+import { Fustat } from "next/font/google"
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fustat.className} bg-grey-100`}
+        className={`${fustat.className} geometric-fustat bg-grey-100 3xl:mx-60 4xl:mx-96`}
       >
         {children}
       </body>

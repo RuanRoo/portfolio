@@ -1,5 +1,6 @@
-import Header from "./components/Header";
-import Landing from "./components/Landing";
+import Header from "./components/header/Header";
+import Landing from "./components/landing/Landing";
+import SelectedWork from "./components/selectedWork/SelectedWork";
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div className="text-brandblack text-lg">
        <Header />
        <Landing />
+       <SelectedWork />
     </div>
   )
 }
