@@ -72,8 +72,8 @@ const projects: Project[] = [
 
 export default function SelectedWork() {
   return (
-    <div className="mx-10 mt-36 mb-36">
-      <h1 className="text-6xl font-semibold mb-20 text-brandblack">Selected Work</h1>
+    <div id="selected-work" className="mx-10 mt-28 mb-36 scroll-mt-20">
+      <h1 className="text-6xl mt-10 font-semibold mb-10 text-brandblack">Selected Work</h1>
       <ProjectAccordion projects={projects} />
     </div>
   );

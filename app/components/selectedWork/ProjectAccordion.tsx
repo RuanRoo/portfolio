@@ -31,10 +31,10 @@ export function ProjectAccordion({ projects }: ProjectAccordionProps) {
           <AccordionItem
             key={project.id}
             value={project.id}
-            className="border-b border-grey-400 py-2"
+            className=""
           >
             <AccordionTrigger className="hover:no-underline">
-              <div className="flex w-full items-center justify-between">
+              <div className="flex w-full items-center justify-between border-b border-grey-400 py-2">
                 <div className="flex items-center gap-3">
                   <div className={`h-2 w-2 rounded-full ${isOpen ? 'bg-brandblue' : 'bg-grey-500'}`} />
                   <span className="text-lg font-normal text-brandblack">

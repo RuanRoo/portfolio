@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: #151A19;
+  scroll-snap-type: y proximity;
 }
 
 .geometric-fustat {
@@ -15,3 +19,8 @@ body {
     --radius: 0.5rem;
   }
 }
+
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
+}
+

@@ -20,7 +20,8 @@ export default {
   				'600': '#4A5351'
   			},
   			brandblack: '#1A1A1A',
-  			brandblue: '#5769EF'
+  			brandblue: '#5769EF',
+  			charcoal: '#333336'
   		},
 		screens: {
 			'3xl': '1920px',

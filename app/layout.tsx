@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Fustat } from "next/font/google"
 import "./globals.css";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +24,9 @@ export default function RootLayout({
       <body
         className={`${fustat.className} geometric-fustat bg-grey-100 3xl:mx-60 4xl:mx-96`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
