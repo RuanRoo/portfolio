@@ -23,11 +23,14 @@ export default function Landing({ onExploreClick }: LandingProps) {
         <Intro />
       </div>
       <div className="w-2/3 mx-auto flex justify-end mt-6">
-      <div className="border border-brandblack font-semibold rounded-[91px] py-2 px-6 inline-block text-base cursor-pointer hover:border-brandblue hover:text-brandblue transition-all duration-500 ease-in-out" onClick={onExploreClick}>
-              Scroll for funfacts
-            </div>
+        <div
+          className="border border-brandblack font-semibold rounded-[91px] py-2 px-6 inline-block text-base cursor-pointer hover:border-brandblue hover:text-brandblue transition-all duration-500 ease-in-out"
+          onClick={onExploreClick}
+        >
+          SCROLL TO EXPLORE
+        </div>
       </div>
-      <div className="flex justify-between mt-12 mx-28 font-medium text-base">
+      <div className="flex justify-between mt-24 mx-28 font-medium text-base">
         <div className="group flex items-center transition-all duration-300 ease-in-out cursor-pointer" onClick={handleDownload}>
           <div className="text-gray-600 group-hover:text-blue-600 mr-1 transition-colors duration-300">Here for my CV</div>
           <ArrowRight

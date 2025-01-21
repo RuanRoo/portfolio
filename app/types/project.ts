@@ -4,7 +4,8 @@ export interface Project {
     content: {
       techStack: string[],
       website?: string
-      description: string
+      description1: string
+      description2: string
       image: string
     }
   }

@@ -1,6 +1,6 @@
 const LazyVideo: React.FC = () => {
   return (
-    <div className="w-[650px] h-[500px] overflow-hidden relative rounded-md">
+    <div className="w-[650px] h-[500px] overflow-hidden relative rounded-xl">
       <video
         muted
         loop

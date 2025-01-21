@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="flex gap-4 justify-between border-t border-grey-400 m-10">
       <div>
-        <div className="font-bold text-6xl leading-super-tight mt-14">
+        <div className="font-semibold text-6xl leading-super-tight tracking-tighter mt-14">
           Find me on <br /> socials
         </div>
       </div>

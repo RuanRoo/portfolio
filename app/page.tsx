@@ -1,19 +1,13 @@
 'use client'
 
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 import Landing from "./components/landing/Landing"
 import SelectedWork from "./components/selectedWork/SelectedWork"
-import { useScrollSnap } from './hooks/useScrollSnap'
 
 export default function Home() {
   const selectedWorkRef = useRef<HTMLDivElement>(null)
-  const { observeElement } = useScrollSnap()
 
-  useEffect(() => {
-    if (selectedWorkRef.current) {
-      observeElement(selectedWorkRef.current, -80); // Pass the same offset as in scrollToSelectedWork
-    }
-  }, [observeElement])
+
 
   const scrollToSelectedWork = () => {
     if (selectedWorkRef.current) {

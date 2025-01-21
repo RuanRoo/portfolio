@@ -2,8 +2,9 @@
 import { useEffect, useRef } from "react";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
-import Section3 from "./Section3";
 import { useScrollSnap } from "@/app/hooks/useScrollSnap";
+import Section4 from "./Section4";
+import Section3 from "./Section3";
 
 export default function About() {
 
@@ -12,13 +13,13 @@ export default function About() {
 
   useEffect(() => {
     if (aboutRef.current) {
-      observeElement(aboutRef.current, -80); // Pass the same offset as in scrollToSelectedWork
+      observeElement(aboutRef.current, -80);
     }
   }, [observeElement])
 
   const scrollToAboutSections = () => {
     if (aboutRef.current) {
-      const yOffset = -80; // Adjust this value to control the scroll position
+      const yOffset = -80;
       const y = aboutRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
@@ -35,6 +36,7 @@ export default function About() {
       <Section2 />
       </div>
       <Section3 />
+      <Section4 />
     </div>
   );
 }
