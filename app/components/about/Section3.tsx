@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Section3() {
   return (
-    <div className="flex flex-wrap gap-10 my-10 px-4">
-      <div className="w-1/3">
+    <div className="flex flex-col md:flex-row gap-10 my-10 px-4">
+      <div className="w-full md:w-1/3">
         <div className="flex gap-2">
           <div className="pt-2">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,8 +16,8 @@ export default function Section3() {
           </div>
         </div>
       </div>
-      <div>
-        <div className="w-[80%]">
+      <div className="w-full">
+        <div className="w-full md:w-[70%] md:pl-48">
           <Image src="/Cooking.png" layout="responsive" width={44} height={44} alt="project image" className="rounded-md" />
         </div>
       </div>

@@ -9,6 +9,7 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
+  { label: "Home", href: "/" },
   { label: "About me", href: "/about" },
   { label: "Selected work", href: "/work" },
   { label: "Roadmap", href: "/roadmap" },
@@ -18,7 +19,7 @@ export function MenuContent() {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null)
 
   return (
-<div className="flex flex-col flex-grow">
+<div className="flex flex-col flex-grow h-[90%] justify-between">
   <nav className="flex flex-col">
     {menuItems.map((item) => (
       <a
@@ -37,7 +38,7 @@ export function MenuContent() {
       </a>
     ))}
   </nav>
-  <div className='mt-auto border-t border-grey-500'>
+  <div className=' border-t border-grey-500'>
     <h3 className="mt-2 text-sm font-semibold text-grey-500 mb-2">Let's connect</h3>
     <a
       href="/contact"

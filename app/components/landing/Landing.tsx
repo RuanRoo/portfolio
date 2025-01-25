@@ -30,7 +30,7 @@ export default function Landing({ onExploreClick }: LandingProps) {
           SCROLL TO EXPLORE
         </div>
       </div>
-      <div className="flex justify-between mt-24 mx-28 font-medium text-base">
+      <div className="flex justify-between p-4 md:mt-24 md:mx-28 font-medium text-base">
         <div className="group flex items-center transition-all duration-300 ease-in-out cursor-pointer" onClick={handleDownload}>
           <div className="text-gray-600 group-hover:text-blue-600 mr-1 transition-colors duration-300">Here for my CV</div>
           <ArrowRight
