@@ -19,9 +19,9 @@ export default function Section4() {
           <LazyVideo />
         </div>
       </div>
-      <div className="md:mt-auto">
+      <div className="md:mt-auto w-auto">
         <Link href="/">
-          <div className="border border-brandblack font-semibold rounded-[91px] px-6 hover:border-brandblue hover:text-brandblue transition-all duration-500 ease-in-out">
+          <div className="border border-brandblack font-semibold rounded-[91px] px-6 hover:border-brandblue hover:text-brandblue transition-all duration-500 ease-in-out inline-block">
             BACK
           </div>
         </Link>

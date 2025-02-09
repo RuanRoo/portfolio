@@ -2,7 +2,7 @@ import { Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col md:flex-row gap-4 md:justify-between border-t border-grey-400 mx-4 md:m-10">
+    <div id="footer" className="flex flex-col md:flex-row gap-4 md:justify-between border-t border-grey-400 mx-4 md:m-10">
       <div>
         <div className="font-semibold text-4xl md:text-6xl leading-super-tight tracking-tighter mt-8 md:mt-14">
           Find me on <br /> socials

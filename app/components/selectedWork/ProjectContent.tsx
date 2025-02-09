@@ -45,7 +45,7 @@ export function ProjectContent({ content }: ProjectContentProps) {
         )}
       </div>
       <a 
-        className="ml-auto mr-2 sm:mr-6 mt-6 sm:mt-12 hover:text-brandblue transition-all duration-300 ease-in-out" 
+        className="mr-2 sm:mr-6 mt-6 sm:mt-12 hover:text-brandblue transition-all duration-300 ease-in-out" 
         href={content.website} 
         target="blank"
       >

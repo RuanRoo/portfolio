@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fustat.className} geometric-fustat bg-grey-100 3xl:mx-60 4xl:mx-96`}
+        className={`${fustat.className} geometric-fustat bg-grey-100 3xl:mx-60 4xl:mx-96 pb-2 md:pb-0`}
       >
         <Header />
         {children}

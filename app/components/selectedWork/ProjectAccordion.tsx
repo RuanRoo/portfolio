@@ -36,12 +36,12 @@ export function ProjectAccordion({ projects }: ProjectAccordionProps) {
             <AccordionTrigger className="hover:no-underline">
               <div className="flex w-full items-center justify-between border-b border-grey-400 py-2">
                 <div className="flex items-center gap-3">
-                  <div className={`h-4 w-4 rounded-full ${isOpen ? 'bg-brandblue' : 'bg-grey-500'}`} />
+                  <div className={`h-4 w-4 rounded-full ${isOpen ? 'bg-brandblue' : 'bg-grey-300'}`} />
                   <span className="text-lg font-normal text-brandblack">
                     {project.title}
                   </span>
                 </div>
-                <span className={`text-sm ${isOpen ? 'text-brandblue' : 'text-grey-500'}`}>
+                <span className={`text-sm ${isOpen ? 'text-brandblue' : 'brandblack'}`}>
                   See details
                 </span>
               </div>

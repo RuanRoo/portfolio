@@ -5,9 +5,24 @@ import { cn } from "@/lib/utils";
 import Menu from "./Menu";
 import { MenuContent } from "./menuContent";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname()
+
+  const handleScrollToFooter = (e: React.MouseEvent) => {
+    e.preventDefault()
+
+    if (pathname === "/") {
+      // Scroll only if already on the home page
+      document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" })
+    } else {
+      // Redirect to "/" and then scroll
+      window.location.href = "/#footer"
+    }
+    setIsMenuOpen(false)
+  }
 
   return (
     <>
@@ -16,7 +31,7 @@ export default function Header() {
           <div className="font-black">RUAN RADYN</div>
         </Link>
         <div className="flex items-center gap-4 text-base font-semibold">
-          <div className="hidden md:flex h-10 items-center rounded-[91px] border border-brandblack px-5">GET IN TOUCH</div>
+          <div className="hidden md:flex h-10 items-center rounded-[91px] border border-brandblack px-5 cursor-pointer hover:bg-brandblue hover:text-grey-100 transition-all duration-500 ease-in-out" onClick={handleScrollToFooter}>GET IN TOUCH</div>
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <Menu />
           </button>
@@ -36,7 +51,7 @@ export default function Header() {
         {/* Menu Panel */}
         <div
           className={cn(
-            "fixed inset-y-0 right-0 z-50 w-full bg-zinc-900 px-4 py-2 md:p-8 text-grey-500 transition-transform md:top-16 md:h-[75vh] md:w-[400px] md:rounded-2xl",
+            "fixed inset-y-0 right-0 z-50 w-full bg-zinc-900 px-4 py-2 md:p-8 text-grey-400 transition-transform md:top-16 md:h-[75vh] md:w-[400px] md:rounded-2xl",
             isMenuOpen ? "translate-x-0 md:right-10" : "translate-x-full md:right-[-420px]"
           )}
         >
@@ -57,7 +72,7 @@ export default function Header() {
             </button>
           </div>
           <div className="h-full">
-            <MenuContent />
+            <MenuContent scrollToFooter={handleScrollToFooter} />
           </div>
         </div>
       </div>

@@ -8,15 +8,18 @@ interface MenuItem {
   href: string
 }
 
+interface MenuContentProps {
+  scrollToFooter: (e: React.MouseEvent) => void
+}
+
 const menuItems: MenuItem[] = [
   { label: "Home", href: "/" },
   { label: "About me", href: "/about" },
-  { label: "Selected work", href: "/work" },
-  { label: "Roadmap", href: "/roadmap" },
 ]
 
-export function MenuContent() {
+export function MenuContent({scrollToFooter}: MenuContentProps) {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null)
+
 
   return (
 <div className="flex flex-col flex-grow h-[90%] justify-between">
@@ -41,7 +44,8 @@ export function MenuContent() {
   <div className=' border-t border-grey-500'>
     <h3 className="mt-2 text-sm font-semibold text-grey-500 mb-2">Let's connect</h3>
     <a
-      href="/contact"
+      href="/"
+      onClick={scrollToFooter}
       className="relative flex items-center justify-between rounded-lg px-4 py-3 text-lg transition-colors hover:bg-zinc-800"
       onMouseEnter={() => setHoveredItem("Say hi")}
       onMouseLeave={() => setHoveredItem(null)}
