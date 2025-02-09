@@ -72,7 +72,7 @@ export default function Header() {
             </button>
           </div>
           <div className="h-full">
-            <MenuContent scrollToFooter={handleScrollToFooter} />
+            <MenuContent scrollToFooter={handleScrollToFooter} setIsMenuOpen={setIsMenuOpen} />
           </div>
         </div>
       </div>

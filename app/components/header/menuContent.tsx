@@ -10,7 +10,8 @@ interface MenuItem {
 }
 
 interface MenuContentProps {
-  scrollToFooter: (e: React.MouseEvent) => void
+  scrollToFooter: (e: React.MouseEvent) => void;
+  setIsMenuOpen: (isOpen: boolean) => void
 }
 
 const menuItems: MenuItem[] = [
@@ -18,9 +19,12 @@ const menuItems: MenuItem[] = [
   { label: "About me", href: "/about" },
 ]
 
-export function MenuContent({scrollToFooter}: MenuContentProps) {
+export function MenuContent({scrollToFooter, setIsMenuOpen}: MenuContentProps) {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null)
 
+  const handleClick = () => {
+    setIsMenuOpen(false) // Close menu when an item is clicked
+  }
 
   return (
 <div className="flex flex-col flex-grow h-[90%] justify-between">
@@ -32,6 +36,7 @@ export function MenuContent({scrollToFooter}: MenuContentProps) {
         className="group relative flex items-center justify-between rounded-lg px-4 py-2 text-lg transition-colors hover:bg-zinc-800"
         onMouseEnter={() => setHoveredItem(item.label)}
         onMouseLeave={() => setHoveredItem(null)}
+        onClick={handleClick}
       >
         <span>{item.label}</span>
         <ArrowRight
