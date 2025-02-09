@@ -1,4 +1,5 @@
 import { Mail } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-6 md:gap-3 mt-8 md:mt-0">
             <div className="w-fit">
-              <a
+              <Link
                 href="mailto:radyn00@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -24,10 +25,10 @@ export default function Footer() {
               >
                 <Mail className="text-grey-100 group-hover:text-grey-400 transition-all duration-300 ease-in-out transform group-hover:scale-125" />
                 <div>Send me an email</div>
-              </a>
+              </Link>
             </div>
             <div className="w-fit">
-              <a
+              <Link
                 href="https://github.com/RuanRoo"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -50,10 +51,10 @@ export default function Footer() {
                   <path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
                 <div>Check out some code on GitHub!</div>
-              </a>
+              </Link>
             </div>
             <div className="w-fit">
-              <a
+              <Link
                 href="https://www.linkedin.com/in/ruan-radyn-2998971a4/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -77,7 +78,7 @@ export default function Footer() {
                   <circle cx="4" cy="4" r="2" />
                 </svg>
                 <div>Connect on LinkedIn</div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

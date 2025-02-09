@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Heading from "./Heading";
 import Intro from "./Intro";
+import Link from "next/link";
 
 interface LandingProps {
   onExploreClick: () => void;
@@ -38,13 +39,13 @@ export default function Landing({ onExploreClick }: LandingProps) {
             width={20}
           />
         </div>
-        <a href="https://github.com/RuanRoo" target="blank" className="group flex items-center transition-all duration-300 ease-in-out">
+        <Link href="https://github.com/RuanRoo" target="blank" className="group flex items-center transition-all duration-300 ease-in-out">
           <div className="text-gray-600 group-hover:text-brandblue mr-1 transition-colors duration-300">Go to my GitHub</div>
           <ArrowRight
             className="text-gray-600 group-hover:text-brandblue transition-all duration-300 ease-in-out group-hover:translate-x-1"
             width={20}
           />
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 import { useState } from "react"
 
 interface MenuItem {
@@ -25,7 +26,7 @@ export function MenuContent({scrollToFooter}: MenuContentProps) {
 <div className="flex flex-col flex-grow h-[90%] justify-between">
   <nav className="flex flex-col">
     {menuItems.map((item) => (
-      <a
+      <Link
         key={item.label}
         href={item.href}
         className="group relative flex items-center justify-between rounded-lg px-4 py-2 text-lg transition-colors hover:bg-zinc-800"
@@ -38,12 +39,12 @@ export function MenuContent({scrollToFooter}: MenuContentProps) {
             hoveredItem === item.label ? "opacity-100" : "opacity-0"
           }`}
         />
-      </a>
+      </Link>
     ))}
   </nav>
   <div className=' border-t border-grey-500'>
     <h3 className="mt-2 text-sm font-semibold text-grey-500 mb-2">Let's connect</h3>
-    <a
+    <Link
       href="/"
       onClick={scrollToFooter}
       className="relative flex items-center justify-between rounded-lg px-4 py-3 text-lg transition-colors hover:bg-zinc-800"
@@ -56,7 +57,7 @@ export function MenuContent({scrollToFooter}: MenuContentProps) {
           hoveredItem === "Say hi" ? "opacity-100" : "opacity-0"
         }`}
       />
-    </a>
+    </Link>
   </div>
 </div>
 

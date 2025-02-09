@@ -1,5 +1,6 @@
 import { type Project } from "@/app/types/project";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectContentProps {
   content: Project["content"];
@@ -19,40 +20,24 @@ export function ProjectContent({ content }: ProjectContentProps) {
               </div>
             ))}
           </div>
-          {content.description1 && (
-            <p className="text-brandblack text-sm sm:text-base font-light">
-              {content.description1}
-            </p>
-          )}
-          {content.description2 && (
-            <p className="text-brandblack text-sm sm:text-base font-light">
-              {content.description2}
-            </p>
-          )}
+          {content.description1 && <p className="text-brandblack text-sm sm:text-base font-light">{content.description1}</p>}
+          {content.description2 && <p className="text-brandblack text-sm sm:text-base font-light">{content.description2}</p>}
         </div>
         {content.image && (
           <div className="relative flex-[1] lg:flex-[2] overflow-hidden max-h-[40vh] lg:max-h-[80vh] bg-brandblue rounded-xl p-4 sm:p-20 order-1 lg:order-2">
-            <Image 
-              src={content.image} 
-              layout="responsive" 
-              width={16} 
-              height={14} 
-              alt="project image" 
-              className="rounded-md"
-              priority 
-            />
+            <Image src={content.image} layout="responsive" width={16} height={14} alt="project image" className="rounded-md" priority />
           </div>
         )}
       </div>
-      <a 
-        className="mr-2 sm:mr-6 mt-6 sm:mt-12 hover:text-brandblue transition-all duration-300 ease-in-out" 
-        href={content.website} 
-        target="blank"
-      >
-        <div className="font-semibold underline text-sm sm:text-base">
-          See live website
-        </div>
-      </a>
+      {content.website && (
+        <Link
+          className="mr-2 sm:mr-6 mt-6 sm:mt-12 hover:text-brandblue transition-all duration-300 ease-in-out"
+          href={content.website}
+          target="_blank"
+        >
+          <div className="font-semibold underline text-sm sm:text-base">See live website</div>
+        </Link>
+      )}
     </div>
   );
 }
