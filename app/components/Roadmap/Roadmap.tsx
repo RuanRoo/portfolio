@@ -48,8 +48,8 @@ export function Roadmap() {
       </div>
       <div className="flex justify-end mt-4">
         <Link href="/about">
-          <div className="border border-brandblack font-semibold rounded-[91px] px-6 py-2 hover:border-brandblue hover:text-brandblue transition-all duration-500 ease-in-out inline-block">
-            more about me
+          <div className="border border-brandblack font-semibold rounded-[91px] leading-none px-6 py-3 text-base hover:border-brandblue hover:text-brandblue transition-all duration-500 ease-in-out inline-block">
+            MORE ABOUT ME
           </div>
         </Link>
       </div>

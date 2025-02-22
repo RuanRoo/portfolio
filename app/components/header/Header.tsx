@@ -51,12 +51,12 @@ export default function Header() {
         {/* Menu Panel */}
         <div
           className={cn(
-            "fixed inset-y-0 right-0 z-50 w-full bg-zinc-900 px-4 py-2 md:p-8 text-grey-400 transition-transform md:top-16 md:h-[75vh] md:w-[400px] md:rounded-2xl",
+            "fixed z-50 right-2 bg-zinc-900 px-4 py-2 p-8 text-grey-400 transition-transform top-16 h-[75vh] w-[80%] sm:w-[400px] rounded-2xl",
             isMenuOpen ? "translate-x-0 md:right-10" : "translate-x-full md:right-[-420px]"
           )}
         >
           <div className="mb-2 flex justify-end">
-            <button onClick={() => setIsMenuOpen(false)} className="p-2 hover:bg-zinc-800">
+            <button onClick={() => setIsMenuOpen(false)} className="p-2 hover:bg-zinc-800 rounded">
               <svg
                 width="24"
                 height="24"

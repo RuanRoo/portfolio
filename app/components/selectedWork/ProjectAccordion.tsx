@@ -31,7 +31,7 @@ export function ProjectAccordion({ projects }: ProjectAccordionProps) {
           <AccordionItem
             key={project.id}
             value={project.id}
-            className=""
+            className="group"
           >
             <AccordionTrigger className="hover:no-underline">
               <div className="flex w-full items-center justify-between border-b border-grey-400 py-2">
@@ -41,7 +41,7 @@ export function ProjectAccordion({ projects }: ProjectAccordionProps) {
                     {project.title}
                   </span>
                 </div>
-                <span className={`text-sm ${isOpen ? 'text-brandblue' : 'brandblack'}`}>
+                <span className={`text-sm ${isOpen ? 'text-brandblue' : 'brandblack'} group-hover:text-brandblue`}>
                   See details
                 </span>
               </div>

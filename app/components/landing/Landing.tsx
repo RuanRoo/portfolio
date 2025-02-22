@@ -25,10 +25,10 @@ export default function Landing({ onExploreClick }: LandingProps) {
       </div>
       <div className="w-2/3 mx-auto flex justify-end mt-6">
         <div
-          className="hidden md:inline-block border border-brandblack font-semibold rounded-[91px] py-2 px-6 text-base cursor-pointer hover:border-brandblue hover:text-brandblue transition-all duration-500 ease-in-out"
+          className="hidden md:inline-block border border-brandblack font-semibold rounded-[91px] leading-none py-3 px-6 text-base cursor-pointer hover:border-brandblue hover:text-brandblue transition-all duration-500 ease-in-out"
           onClick={onExploreClick}
         >
-          SCROLL TO EXPLORE
+          LEARN MORE
         </div>
       </div>
       <div className="flex flex-col gap-3 md:flex-row md:justify-between p-4 md:mt-24 md:mx-28 font-medium text-base">

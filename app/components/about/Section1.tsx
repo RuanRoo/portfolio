@@ -25,7 +25,7 @@ export default function Section1({ scroll }: AboutProps) {
               className="border border-brandblack font-semibold rounded-[91px] py-2 px-6 inline-block text-base cursor-pointer hover:border-brandblue hover:text-brandblue transition-all duration-500 ease-in-out"
               onClick={scroll}
             >
-              SCROLL FOR FUN FACTS
+              SEE FUN FACTS
             </div>
           </div>
         </div>

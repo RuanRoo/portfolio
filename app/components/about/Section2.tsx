@@ -21,21 +21,21 @@ export default function Section2() {
           <div className="w-full">
             <Image src="/about1.png" layout="responsive" width={391} height={469} alt="project image" className="rounded-md" />
             <div className="hidden md:flex items-center w-full md:w-80 gap-4 bg-[#ededf6] rounded-md mt-6 md:ml-auto p-4">
-              <Image src="/index-finger.png" width={44} height={44} alt="pointer" />
+              <Image src="/index-finger.svg" width={44} height={44} alt="pointer" />
               <div className="leading-tight">That is my son, Skylar, he has a serious ball obsession</div>
             </div>
             <div className="md:hidden flex items-center w-full md:w-80 gap-4 bg-[#ededf6] rounded-md mt-6 md:mt-11 mb-2 p-4">
               <div className="leading-tight">This is my wife, we have been married for 12 years.</div>
-              <Image src="/index-finger.png" width={44} height={44} alt="pointer" className="transform -rotate-90" />
+              <Image src="/index-finger.svg" width={44} height={44} alt="pointer" className="transform -rotate-90" />
             </div>
           </div>
           <div className="w-full">
             <div className="md:hidden flex items-center w-full md:w-80 gap-4 bg-[#ededf6] rounded-md mt-6 md:ml-auto p-4 mb-4">
-              <Image src="/index-finger.png" width={44} height={44} alt="pointer" className="transform rotate-90" />
+              <Image src="/index-finger.svg" width={44} height={44} alt="pointer" className="transform rotate-90" />
               <div className="leading-tight">That is my son, Skylar, he has a serious ball obsession</div>
             </div>
             <div className="hidden md:flex items-center w-full md:w-80 gap-4 bg-[#ededf6] rounded-md mt-6 md:mt-11 mb-6 p-4">
-              <Image src="/index-finger.png" width={44} height={44} alt="pointer" className="scale-x-[-1]" />
+              <Image src="/index-finger.svg" width={44} height={44} alt="pointer" className="scale-x-[-1]" />
               <div className="leading-tight">This is my wife, we have been married for 12 years.</div>
             </div>
             <div>
