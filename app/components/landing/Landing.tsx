@@ -10,8 +10,8 @@ interface LandingProps {
 export default function Landing({ onExploreClick }: LandingProps) {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/document.pdf";
-    link.download = "document.pdf";
+    link.href = "/Ruan_CV.pdf";
+    link.download = "Ruan_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
